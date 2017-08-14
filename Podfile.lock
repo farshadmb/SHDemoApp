@@ -1,0 +1,49 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking+AutoRetry (0.0.5):
+    - AFNetworking (~> 2)
+    - ObjcAssociatedObjectHelpers
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Material (2.6.3):
+    - Material/Core (= 2.6.3)
+  - Material/Core (2.6.3)
+  - ObjcAssociatedObjectHelpers (2.0.1):
+    - ObjcAssociatedObjectHelpers/Core (= 2.0.1)
+    - ObjcAssociatedObjectHelpers/NSObject+Dictionary (= 2.0.1)
+  - ObjcAssociatedObjectHelpers/Core (2.0.1)
+  - ObjcAssociatedObjectHelpers/NSObject+Dictionary (2.0.1):
+    - ObjcAssociatedObjectHelpers/Core
+
+DEPENDENCIES:
+  - AFNetworking
+  - AFNetworking+AutoRetry
+  - Material (~> 2.6.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFNetworking+AutoRetry: 5987ec96155e58fe356f1a3e91e79e5f3be6296a
+  Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
+  ObjcAssociatedObjectHelpers: 686c291f292c26a49b9b1fa7d58130a8d35d59d2
+
+PODFILE CHECKSUM: 771a0867e578ad56ff461a45a82f82ca5603b10f
+
+COCOAPODS: 1.2.0
