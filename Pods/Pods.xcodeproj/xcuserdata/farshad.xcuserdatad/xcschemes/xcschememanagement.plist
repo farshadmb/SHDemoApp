@@ -29,6 +29,41 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>MaterialComponents-MaterialIcons_ic_check.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>MaterialComponents-MaterialIcons_ic_check_circle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>MaterialComponents-MaterialIcons_ic_chevron_right.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>MaterialComponents-MaterialIcons_ic_info.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>MaterialComponents-MaterialIcons_ic_radio_button_unchecked.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>MaterialComponents-MaterialIcons_ic_reorder.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>MaterialComponents.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>ObjcAssociatedObjectHelpers.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -39,6 +74,16 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>Pods-SHDemoAppTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>Pods-SHDemoAppUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -48,6 +93,11 @@
 			<true/>
 		</dict>
 		<key>050C971E9F378A4DB3A9F3E33A0DCE51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>084109B487BEC30C944B2B5A3D3166E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +122,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3BC26F4F446309E50BAE929104AC983A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4800B1974A179CEB23A8D6F29C20F5C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5357BEDAA60B4A95C39F268F7D6BF36C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>56125567EBC3480C71B6B8439B59317D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +157,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>71693141F9C168CC8E024F3B0944D272</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>78302147CA6F1F939D3A8097F2C432B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>813A9014AA8FBB4E55F779783087C8E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,7 +177,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AC7975A94A17CD3FFAE04174674446B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4F38BC8E92E297BDAF96B65B74383A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFB720CDDCBF259F921B06F8A254E5EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F9507E5D5CC7985813601CB54334396E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDA1E718110CF1C35C97386AADFAAE28</key>
 		<dict>
 			<key>primary</key>
 			<true/>

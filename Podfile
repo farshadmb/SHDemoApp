@@ -15,7 +15,7 @@ target 'SHDemoApp' do
 
     target 'SHDemoAppTests' do
         inherit! :search_paths
-        pod 'Firebase'
+        
         #Pods for testing
     end
     target 'SHDemoAppUITests' do
