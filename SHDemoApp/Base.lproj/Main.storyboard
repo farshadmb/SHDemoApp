@@ -137,7 +137,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozH-cP-BmU">
-                                            <rect key="frame" x="8" y="48" width="284" height="144"/>
+                                            <rect key="frame" x="8" y="56" width="284" height="136"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OX-mh-zqM">
                                                     <rect key="frame" x="148" y="8" width="118" height="21"/>
@@ -250,6 +250,7 @@
                                             <rect key="frame" x="16" y="16" width="120" height="168"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" secondItem="ryK-9b-zX6" secondAttribute="height" multiplier="5:7" id="8mA-lx-6Rp"/>
                                                 <constraint firstAttribute="width" secondItem="ryK-9b-zX6" secondAttribute="height" multiplier="5:7" priority="750" id="9AG-oX-T6c"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
@@ -317,7 +318,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGq-pX-KuL">
-                                            <rect key="frame" x="257" y="56" width="35" height="35"/>
+                                            <rect key="frame" x="257" y="64" width="35" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="zGq-pX-KuL" secondAttribute="height" multiplier="1:1" id="kNy-Hn-Ir1"/>
                                                 <constraint firstAttribute="height" constant="35" id="noR-QV-XCV"/>
@@ -328,11 +329,11 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="ozH-cP-BmU" firstAttribute="top" secondItem="DUZ-ka-kTX" secondAttribute="topMargin" multiplier="6" id="4DW-kr-eOS"/>
+                                    <constraint firstItem="ozH-cP-BmU" firstAttribute="top" secondItem="DUZ-ka-kTX" secondAttribute="topMargin" multiplier="7" id="4DW-kr-eOS"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="ryK-9b-zX6" secondAttribute="bottom" constant="8" id="57z-ML-Wgb"/>
                                     <constraint firstItem="3OX-mh-zqM" firstAttribute="leading" secondItem="ryK-9b-zX6" secondAttribute="trailing" constant="20" id="6XG-Wk-Afj"/>
                                     <constraint firstItem="ryK-9b-zX6" firstAttribute="leading" secondItem="DUZ-ka-kTX" secondAttribute="leadingMargin" constant="8" id="F7n-QF-vTb"/>
-                                    <constraint firstItem="ryK-9b-zX6" firstAttribute="width" secondItem="DUZ-ka-kTX" secondAttribute="width" multiplier="1.6:4" id="FLp-jM-Xyb"/>
+                                    <constraint firstItem="ryK-9b-zX6" firstAttribute="width" relation="lessThanOrEqual" secondItem="DUZ-ka-kTX" secondAttribute="width" multiplier="1.6:4" id="FLp-jM-Xyb"/>
                                     <constraint firstItem="ozH-cP-BmU" firstAttribute="leading" secondItem="DUZ-ka-kTX" secondAttribute="leadingMargin" id="IyA-qu-7vy"/>
                                     <constraint firstItem="b5i-TO-mJ9" firstAttribute="centerX" secondItem="ryK-9b-zX6" secondAttribute="trailing" id="Tug-JJ-BIh"/>
                                     <constraint firstItem="aza-5b-EG5" firstAttribute="centerY" secondItem="ryK-9b-zX6" secondAttribute="centerY" id="UVF-z6-fnu"/>
@@ -346,6 +347,11 @@
                                     <constraint firstItem="zGq-pX-KuL" firstAttribute="top" secondItem="ozH-cP-BmU" secondAttribute="topMargin" id="tSN-Z0-s3U"/>
                                     <constraint firstItem="zGq-pX-KuL" firstAttribute="trailing" secondItem="DUZ-ka-kTX" secondAttribute="trailingMargin" id="urf-TM-2Kt"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FLp-jM-Xyb"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outlet property="backView" destination="ozH-cP-BmU" id="mbR-GI-1xl"/>
                                     <outlet property="descriptionLabel" destination="kYg-eT-ZTy" id="gm1-to-kGN"/>

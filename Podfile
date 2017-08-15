@@ -13,4 +13,14 @@ target 'SHDemoApp' do
   pod 'AFNetworking+AutoRetry'
   # Pods for SHDemoApp
 
+    target 'SHDemoAppTests' do
+        inherit! :search_paths
+        pod 'Firebase'
+        #Pods for testing
+    end
+    target 'SHDemoAppUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+
 end

@@ -217,6 +217,6 @@ extension ShowsItemsCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellHeightAt indexPath: IndexPath) -> CGFloat {
-        return 200.0
+        return 200.0 * (self.view.bounds.width / 320)
     }
 }
