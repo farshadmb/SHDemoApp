@@ -33,4 +33,124 @@ class SHDemoAppUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testTabBarSelection (){
+        
+        let tabBarsQuery = XCUIApplication().tabBars
+        tabBarsQuery.children(matching: .button).element(boundBy: 0).tap()
+        tabBarsQuery.children(matching: .button).element(boundBy: 1).tap()
+        tabBarsQuery.children(matching: .button).element(boundBy: 2).tap()
+        tabBarsQuery.children(matching: .button).element(boundBy: 3).tap()
+        tabBarsQuery.children(matching: .button).element(boundBy: 4).tap()
+        
+    }
+    
+    func testSelectMainView (){
+        
+        let app = XCUIApplication()
+        app.tabBars.children(matching: .button).element(boundBy: 2).tap()
+        
+        let goShowsStaticTextLabel = app.navigationBars["GO Shows"].staticTexts["Go Shows"]
+        XCTAssertTrue(goShowsStaticTextLabel.exists, "Not found Go Shows")
+        
+        
+    }
+    
+    func testScrollPageController(){
+        XCUIDevice.shared().orientation = .portrait
+        
+        let app = XCUIApplication()
+        app.buttons["ANIMATIONS"].tap()
+        app.buttons["DRAMA"].tap()
+        app.buttons["ACTIONS"].tap()
+        
+        let collectionViewsQuery = app.collectionViews
+        let element = collectionViewsQuery.children(matching: .cell).element(boundBy: 1).children(matching: .other).element
+        
+        element.swipeLeft()
+        element.swipeLeft()
+        
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .collectionView).element.swipeRight()
+        
+        
+        
+        
+    }
+    
+    func testCollectionViewLoading(){
+        let app = XCUIApplication()
+        
+        let collectionViews = app.collectionViews
+        
+        
+        let firstCell = collectionViews.cells.staticTexts["Kirby Buckets"]
+        
+        
+        let exists = NSPredicate(format: "exists == 1")
+        
+        XCTAssertTrue(firstCell.exists, "not exist")
+        
+        expectation(for: exists, evaluatedWith: firstCell,handler : nil)
+        
+        
+        waitForExpectations(timeout: 0.2) { (error) in
+            print(error)
+        }
+        
+    }
+    
+    func testCollectionViewMoreLoading(){
+        
+    }
+    
+    
+    func testShowDetail(){
+        let app = XCUIApplication()
+        
+        let collectionViews = app.collectionViews
+        
+        
+        let firstCell = collectionViews.cells.staticTexts["Kirby Buckets"]
+        
+        
+        let exists = NSPredicate(format: "exists == 1")
+        
+        XCTAssertTrue(firstCell.exists, "not exist")
+        
+        expectation(for: exists, evaluatedWith: firstCell,handler : nil)
+        
+        firstCell.tap()
+        
+        waitForExpectations(timeout: 0.2) { (error) in
+            print(error)
+        }
+    }
+    
+    
+    func testShowDetailThenPopToMainView(){
+        
+        let app = XCUIApplication()
+        
+        let collectionViews = app.collectionViews
+        
+        
+        let firstCell = collectionViews.cells.staticTexts["Kirby Buckets"]
+        
+        
+        let exists = NSPredicate(format: "exists == 1")
+        
+        XCTAssertTrue(firstCell.exists, "not exist")
+        
+        expectation(for: exists, evaluatedWith: firstCell,handler : nil)
+        
+        firstCell.tap()
+        XCUIDevice.shared().orientation = .portrait
+        
+        app.navigationBars["SHDemoApp.ShowDetailView"].children(matching: .other).element.children(matching: .button).element.tap()
+        
+        waitForExpectations(timeout: 0.2) { (error) in
+            print(error)
+        }
+        
+    }
+    
 }

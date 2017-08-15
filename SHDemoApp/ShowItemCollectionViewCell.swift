@@ -38,7 +38,7 @@ class ShowItemCollectionViewCell: UICollectionViewCell {
         self.durationLabel.text = nil
         self.rateLabel.text = nil
         self.descriptionLabel.text = nil
-        self.imageView.image = nil
+//        self.imageView.image = nil
     }
     
     func configure(with item:ShowItemShortModel){
