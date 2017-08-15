@@ -23,6 +23,9 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - KIF (3.5.2):
+    - KIF/Core (= 3.5.2)
+  - KIF/Core (3.5.2)
   - Material (2.6.3):
     - Material/Core (= 2.6.3)
   - Material/Core (2.6.3)
@@ -74,6 +77,7 @@ PODS:
   - MaterialComponents/Themes (29.0.0)
   - MaterialComponents/Typography (29.0.0):
     - MaterialComponents/private/Application
+  - Nimble (7.0.1)
   - ObjcAssociatedObjectHelpers (2.0.1):
     - ObjcAssociatedObjectHelpers/Core (= 2.0.1)
     - ObjcAssociatedObjectHelpers/NSObject+Dictionary (= 2.0.1)
@@ -84,16 +88,20 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - AFNetworking+AutoRetry
+  - KIF
   - Material (~> 2.6.3)
   - MaterialComponents/Collections
+  - Nimble
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   AFNetworking+AutoRetry: 5987ec96155e58fe356f1a3e91e79e5f3be6296a
+  KIF: f2a6025bb3f11692df675054a134d43a9ec2d7db
   Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
   MaterialComponents: d0ae7d9b517a72608caaa609682fe2de41921ba0
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   ObjcAssociatedObjectHelpers: 686c291f292c26a49b9b1fa7d58130a8d35d59d2
 
-PODFILE CHECKSUM: 8b0164276a94d4d33d828c4400c3ad8f37b93c64
+PODFILE CHECKSUM: 5b9be62ca3f44e7ec21109b861e083602ab59ddb
 
 COCOAPODS: 1.2.0

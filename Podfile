@@ -21,6 +21,8 @@ target 'SHDemoApp' do
     target 'SHDemoAppUITests' do
         inherit! :search_paths
         # Pods for testing
+        pod 'KIF'
+        pod 'Nimble'
     end
 
 end

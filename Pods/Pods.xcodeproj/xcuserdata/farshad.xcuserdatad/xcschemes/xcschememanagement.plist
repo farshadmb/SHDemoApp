@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>KIF.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 		<key>Material-com.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -63,6 +68,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
+		</dict>
+		<key>Nimble.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
 		</dict>
 		<key>ObjcAssociatedObjectHelpers.xcscheme</key>
 		<dict>
@@ -157,6 +167,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6A841B7A936B3236AAB00652E1111BCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>71693141F9C168CC8E024F3B0944D272</key>
 		<dict>
 			<key>primary</key>
@@ -172,6 +187,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>898C4182891DCF5CC594EB02B2032D4F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8D511562A8961C5B7A5DD87BAE2374F2</key>
 		<dict>
 			<key>primary</key>
@@ -183,6 +203,11 @@
 			<true/>
 		</dict>
 		<key>D4F38BC8E92E297BDAF96B65B74383A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD7C8BF89FE8053D0A2A2D88BB49CF07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
