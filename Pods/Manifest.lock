@@ -26,6 +26,54 @@ PODS:
   - Material (2.6.3):
     - Material/Core (= 2.6.3)
   - Material/Core (2.6.3)
+  - MaterialComponents/CollectionCells (29.0.0):
+    - MaterialComponents/CollectionLayoutAttributes
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Icons/ic_chevron_right
+    - MaterialComponents/private/Icons/ic_info
+    - MaterialComponents/private/Icons/ic_radio_button_unchecked
+    - MaterialComponents/private/Icons/ic_reorder
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/RTL
+    - MaterialComponents/Typography
+  - MaterialComponents/CollectionLayoutAttributes (29.0.0)
+  - MaterialComponents/Collections (29.0.0):
+    - MaterialComponents/CollectionCells
+    - MaterialComponents/CollectionLayoutAttributes
+    - MaterialComponents/Ink
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+  - MaterialComponents/Ink (29.0.0):
+    - MaterialComponents/Ink/ColorThemer (= 29.0.0)
+    - MaterialComponents/Ink/Component (= 29.0.0)
+  - MaterialComponents/Ink/ColorThemer (29.0.0):
+    - MaterialComponents/Ink/Component
+    - MaterialComponents/Themes
+  - MaterialComponents/Ink/Component (29.0.0)
+  - MaterialComponents/private/Application (29.0.0)
+  - MaterialComponents/private/Icons/Base (29.0.0)
+  - MaterialComponents/private/Icons/ic_check (29.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_check_circle (29.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_chevron_right (29.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_info (29.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_radio_button_unchecked (29.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Icons/ic_reorder (29.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Math (29.0.0)
+  - MaterialComponents/private/RTL (29.0.0)
+  - MaterialComponents/ShadowElevations (29.0.0)
+  - MaterialComponents/ShadowLayer (29.0.0)
+  - MaterialComponents/Themes (29.0.0)
+  - MaterialComponents/Typography (29.0.0):
+    - MaterialComponents/private/Application
   - ObjcAssociatedObjectHelpers (2.0.1):
     - ObjcAssociatedObjectHelpers/Core (= 2.0.1)
     - ObjcAssociatedObjectHelpers/NSObject+Dictionary (= 2.0.1)
@@ -37,13 +85,15 @@ DEPENDENCIES:
   - AFNetworking
   - AFNetworking+AutoRetry
   - Material (~> 2.6.3)
+  - MaterialComponents/Collections
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   AFNetworking+AutoRetry: 5987ec96155e58fe356f1a3e91e79e5f3be6296a
   Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
+  MaterialComponents: d0ae7d9b517a72608caaa609682fe2de41921ba0
   ObjcAssociatedObjectHelpers: 686c291f292c26a49b9b1fa7d58130a8d35d59d2
 
-PODFILE CHECKSUM: 771a0867e578ad56ff461a45a82f82ca5603b10f
+PODFILE CHECKSUM: 8d461ac0a7ac3c42e0b1716bd90f5055f87dea6b
 
 COCOAPODS: 1.2.0

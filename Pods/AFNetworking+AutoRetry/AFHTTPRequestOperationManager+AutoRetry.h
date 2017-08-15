@@ -2,7 +2,7 @@
 // Created by Shai Ohev Zion on 1/21/14.
 
 #import <Foundation/Foundation.h>
-#import "AFHTTPRequestOperationManager.h"
+#import <AFNetworking/AFHTTPRequestOperationManager.h>
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "OCUnusedMethodInspection"

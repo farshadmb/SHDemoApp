@@ -3,7 +3,7 @@
 // Copyright (c) 2014 shaioz. All rights reserved.
 
 #import <Foundation/Foundation.h>
-#import "AFHTTPSessionManager.h"
+#import <AFNetworking/AFNetworking.h>
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "OCUnusedMethodInspection"

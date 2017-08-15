@@ -8,6 +8,11 @@
 
 import UIKit
 import Material
+import AFNetworking
+
+let APINetworkManager = AFHTTPSessionManager(baseURL: URL(string:"https://api.tvmaze.com"))
+
+
 
 class RootTabBarController: BottomNavigationController {
 
@@ -22,6 +27,8 @@ class RootTabBarController: BottomNavigationController {
             item.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.yellow], for: .selected)
         })
         self.selectedIndex = 2
+        
+        self.configAPINetworkManager()
         
         // Do any additional setup after loading the view.
     }
@@ -39,6 +46,16 @@ class RootTabBarController: BottomNavigationController {
     }
     
 
+    func configAPINetworkManager(){
+        
+        AFNetworkActivityIndicatorManager.shared().isEnabled = true
+        
+        APINetworkManager.requestSerializer = AFJSONRequestSerializer(writingOptions: .prettyPrinted)
+        APINetworkManager.responseSerializer = AFJSONResponseSerializer(readingOptions: .mutableContainers)
+        APINetworkManager.session.configuration.timeoutIntervalForRequest = 30.0
+        
+    }
+    
     /*
     // MARK: - Navigation
 

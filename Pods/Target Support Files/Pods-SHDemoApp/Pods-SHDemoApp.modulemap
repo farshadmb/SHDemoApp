@@ -1,0 +1,6 @@
+framework module Pods_SHDemoApp {
+  umbrella header "Pods-SHDemoApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

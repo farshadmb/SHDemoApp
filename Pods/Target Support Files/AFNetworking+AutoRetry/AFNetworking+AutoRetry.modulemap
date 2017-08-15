@@ -1,0 +1,6 @@
+framework module AFNetworking_AutoRetry {
+  umbrella header "AFNetworking+AutoRetry-umbrella.h"
+
+  export *
+  module * { export * }
+}
