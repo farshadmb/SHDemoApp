@@ -50,15 +50,18 @@ class ShowsItemsCollectionViewController: MDCCollectionViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "showDetail", let detailVC = segue.destination as? ShowDetailViewController {
+            detailVC.show = sender as? ShowItem
+        }
     }
-    */
+    
 
 
 }
@@ -188,7 +191,7 @@ extension ShowsItemsCollectionViewController {
         
         cell.configure(with: item.short)
         
-        if var thumbImage = item.thumbImage {
+        if let thumbImage = item.thumbImage {
             
             cell.imageView.setImageWith(thumbImage, placeholderImage: UIImage.image(with: Color.grey.base, size: cell.imageView.bounds.size))
         }
@@ -200,6 +203,17 @@ extension ShowsItemsCollectionViewController {
         if indexPath.row + 1 == items.count{
             self.fetchMoreShows()
         }
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        let item = items[indexPath.row]
+        
+        self.performSegue(withIdentifier: "showDetail", sender: item)
+        
+        
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellHeightAt indexPath: IndexPath) -> CGFloat {

@@ -19,6 +19,7 @@
 		F8168AB01F420D7E001A12AC /* ShowsItemsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8168AAF1F420D7E001A12AC /* ShowsItemsCollectionViewController.swift */; };
 		F8F188531F4255FD00D3461F /* ShowItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F188521F4255FD00D3461F /* ShowItemCollectionViewCell.swift */; };
 		F8F188551F42644D00D3461F /* ShowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F188541F42644D00D3461F /* ShowItem.swift */; };
+		F8F188571F4293D200D3461F /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F188561F4293D200D3461F /* ShowDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		F8168AAF1F420D7E001A12AC /* ShowsItemsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowsItemsCollectionViewController.swift; sourceTree = "<group>"; };
 		F8F188521F4255FD00D3461F /* ShowItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8F188541F42644D00D3461F /* ShowItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowItem.swift; sourceTree = "<group>"; };
+		F8F188561F4293D200D3461F /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				F8168AA81F41F981001A12AC /* RootTabBarController.swift */,
 				F8168AAD1F420D5F001A12AC /* ShowsViewController.swift */,
 				F8168AAF1F420D7E001A12AC /* ShowsItemsCollectionViewController.swift */,
+				F8F188561F4293D200D3461F /* ShowDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				F8F188551F42644D00D3461F /* ShowItem.swift in Sources */,
 				F8168A961F41F1AF001A12AC /* ViewController.swift in Sources */,
 				F8168AA91F41F981001A12AC /* RootTabBarController.swift in Sources */,
+				F8F188571F4293D200D3461F /* ShowDetailViewController.swift in Sources */,
 				F8168A941F41F1AF001A12AC /* AppDelegate.swift in Sources */,
 				F8F188531F4255FD00D3461F /* ShowItemCollectionViewCell.swift in Sources */,
 				F8168AAE1F420D5F001A12AC /* ShowsViewController.swift in Sources */,
